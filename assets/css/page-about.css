@@ -1,0 +1,49 @@
+body {
+  background-color: transparent !important;
+}
+
+#initial {
+  position: relative;
+  width: 100%;
+  height: 96vh;
+  display: flex;
+  align-items: center;
+}
+
+#initial img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  object-fit: contain;
+  width: 50%;
+  transform: translate(0%, -50%);
+}
+
+.left {
+  width: 35%;
+}
+
+.left-flex {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 5.875rem;
+  width: 50%;
+  grid-row-gap: 6.875rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-flex img {
+  width: 5rem;
+}
+
+#second-section .grid {
+  display: flex;
+  gap: 8.125rem;
+}
+
+.right {
+  width: 50%;
+  position: relative;
+  left: 6.25rem;
+}
