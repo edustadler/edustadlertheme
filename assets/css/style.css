@@ -1,14 +1,27 @@
 /*
-Theme: Edu Stadler Theme
+Theme Name: Edu Stadler Theme
+Theme URI: https://edustadler.com
+Description: A clean and animated theme
+Author: Edu Stadler
+Author URI: https://www.linkedin.com/in/edu-stadler/
+Version: 0.8
 */
 
-@font-face {
-  font-family: "CartographCF";
-  font-weight: normal;
-  src: url("ahttps://edustadler.com/edustadlertheme/wp-content/themes/edustadlertheme/assets/css/assets/fonts/CartographCF-Regular.woff2");
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&family=PT+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body {
+  padding: 0;
+  margin: 0;
+  background-color: yellow;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
 .grid {
   width: 100%;
   max-width: 71.1875rem;
@@ -38,26 +51,20 @@ h1,
 a {
   color: #000;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
-  font-family: "CartographCF";
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background-color: yellow;
-  font-size: 16px;
-  max-width: 100%;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
-}
 
 header {
   padding: 0;

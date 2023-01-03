@@ -31,15 +31,12 @@ function load_script($name)
 function script_load()
 {
     global $post;
-    wp_enqueue_style('bootstrap-cdn-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css');
-    wp_enqueue_script('bootstrap-cdn-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js');
-    wp_enqueue_script('three-cdn-js', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js');
     wp_enqueue_script('gsap-cdn-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js');
     wp_enqueue_script('scrolltrigger-cdn-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js');
     wp_enqueue_script('cssrule-plugin-cdn-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js');
     wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/js/main.js');
     wp_enqueue_style('edustadlertheme', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all');
-    
+
     $template_name = show_template();
     switch ($template_name) {
         case "index.php":
@@ -52,13 +49,12 @@ function script_load()
         default:
             echo '';
     }
-    
 }
 
 add_action('wp_enqueue_scripts', 'script_load');
 
 
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
 
 function get_url_template()
 {

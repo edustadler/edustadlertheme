@@ -6,7 +6,7 @@ Theme Name: Edu Stadler Theme
 @font-face {
     font-family: "CartographCF";
     font-weight: normal;
-    src: url("ahttps://edustadler.com/edustadlertheme/wp-content/themes/edustadlertheme/assets/css/assets/fonts/CartographCF-Regular.woff2");
+    src: url("../../assets/fonts/cartographcf-regular.woff2");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -21,6 +21,20 @@ $light--color: #fff;
 $yellow--color: yellow;
 
 // GENERAL
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $yellow--color;
+    font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
 
 .grid {
     width: 100%;
@@ -62,15 +76,6 @@ p {
     box-sizing: border-box;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: $yellow--color;
-    font-size: 16px;
-    max-width: 100%;
-    overflow-x: hidden;
-    text-rendering: optimizeLegibility;
-}
 
 header {
     padding: 0;
